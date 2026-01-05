@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garcia’s Bay Area Cleaners</title>
+
+  <style>
+    :root {
+      --primary: #1e3a5f;      /* softer navy */
+      --secondary: #f5f7fa;    /* light gray-blue */
+      --accent: #3b82f6;       /* calm blue */
+      --text-dark: #1f2933;    /* charcoal */
+      --text-light: #6b7280;   /* muted gray */
+      --page-bg: #f2f4f7;      /* easy-on-eyes background */
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-dark);
+      background: var(--page-bg);
+      line-height: 1.65;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #274c77);
+      color: #f9fafb;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin: 0;
+      letter-spacing: 0.4px;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      margin: 15px 0 35px;
+      opacity: 0.95;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #f9fafb;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 999px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-light);
+      max-width: 720px;
+      margin: 0 auto 50px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 26px;
+    }
+
+    .service-card {
+      background: #ffffff;
+      padding: 30px 26px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+    }
+
+    .service-card h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .trust {
+      background: var(--secondary);
+      border-radius: 22px;
+      padding: 55px 35px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 28px;
+      text-align: center;
+    }
+
+    .trust div h3 {
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+
+    .contact {
+      background: linear-gradient(135deg, var(--primary), #274c77);
+      color: #f9fafb;
+      border-radius: 24px;
+      padding: 65px 25px;
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+      opacity: 0.95;
+    }
+
+    footer {
+      background: #e5e7eb;
+      padding: 26px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Garcia’s Bay Area Cleaners</h1>
+    <p>Professional, reliable house cleaning throughout the Bay Area</p>
+    <a href="#contact" class="btn-primary">Request a Free Quote</a>
+  </header>
+
+  <section>
+    <h2>Our Cleaning Services</h2>
+    <p class="section-subtitle">High-quality residential cleaning with attention to detail, care, and respect for your home.</p>
+
+    <div class="services">
+      <div class="service-card">
+        <h3>Routine Cleaning</h3>
+        <p>Weekly or bi-weekly cleaning to keep your home fresh, clean, and comfortable.</p>
+      </div>
+      <div class="service-card">
+        <h3>Deep Cleaning</h3>
+        <p>Detailed top-to-bottom cleaning for kitchens, bathrooms, and living spaces.</p>
+      </div>
+      <div class="service-card">
+        <h3>Move In / Move Out</h3>
+        <p>Perfect for apartments, rentals, and homes preparing for new residents.</p>
+      </div>
+      <div class="service-card">
+        <h3>One-Time Cleaning</h3>
+        <p>Ideal for special occasions, guests, or a full home refresh.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="trust">
+      <div>
+        <h3>✔ Trusted & Reliable</h3>
+        <p>Dependable service you can count on, every visit.</p>
+      </div>
+      <div>
+        <h3>✔ Affordable Pricing</h3>
+        <p>Fair, honest rates with no hidden fees.</p>
+      </div>
+      <div>
+        <h3>✔ Family-Owned</h3>
+        <p>Proudly serving Bay Area families with care.</p>
+      </div>
+      <div>
+        <h3>✔ Satisfaction Guaranteed</h3>
+        <p>We’re not happy unless you are.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Garcia’s Bay Area Cleaners</h2>
+    <p>Call or text today to schedule your cleaning</p>
+    <p><strong>Phone:</strong> 6502940369 </p>
+    <p><strong>Email:</strong> garciashousecleaning14@gmail.com</p>
+  </section>
+
+  <footer>
+    © 2026 Garcia’s Bay Area Cleaners. All rights reserved.
+  </footer>
+
+</body>
+</html>
